@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Text Redaction App</title>
+    <style>
+      /* Redact App Styles */
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+      }
+
+      textarea,
+      input,
+      button {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      textarea {
+        width: 80%;
+        height: 100px;
+      }
+
+      input[type="text"] {
+        width: 80%;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      #redactedText {
+        font-weight: bold;
+        color: red;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Text Redaction App</h1>
+    <textarea id="originalText" placeholder="Enter your text here"></textarea>
+    <input
+      type="text"
+      id="wordsToRedact"
+      placeholder="Words to redact (space-separated)"
+    />
+    <button id="redactButton">Redact Now</button>
+    <div id="redactedText"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
